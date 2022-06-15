@@ -43,8 +43,8 @@ class _PostCardState extends State<PostCard> {
       commentLen = snap.docs.length;
     } catch (err) {
       showSnackBar(
-        context,
         err.toString(),
+        context,
       );
     }
     setState(() {});
@@ -55,8 +55,8 @@ class _PostCardState extends State<PostCard> {
       await FirestoreMethods().deletePost(postId);
     } catch (err) {
       showSnackBar(
-        context,
         err.toString(),
+        context,
       );
     }
   }
