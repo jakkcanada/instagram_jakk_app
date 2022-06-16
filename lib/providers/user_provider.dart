@@ -1,5 +1,8 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:instragram_jakk_app/models/user.dart';
+import 'package:provider/provider.dart';
 import '../resources/auth_methods.dart';
 
 class UserProvider with ChangeNotifier {

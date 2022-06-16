@@ -88,9 +88,10 @@ class _PostCardState extends State<PostCard> {
             child: Row(
               children: <Widget>[
                 CircleAvatar(
-                  radius: 16,
+                  radius: 26,
                   backgroundImage: NetworkImage(
                     widget.snap['profImage'].toString(),
+                    //widget.snap['profImage'],
                   ),
                 ),
                 Expanded(
@@ -175,7 +176,8 @@ class _PostCardState extends State<PostCard> {
                   height: MediaQuery.of(context).size.height * 0.35,
                   width: double.infinity,
                   child: Image.network(
-                    widget.snap['postUrl'].toString(),
+                    //widget.snap['postUrl'].toString(),
+                    widget.snap['postUrl'],
                     fit: BoxFit.cover,
                   ),
                 ),
